@@ -1,36 +1,47 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> responsive</title>
-        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="style.css" />
+        <title>Dictionary</title>
     </head>
     <body>
-        <div class="main">
-    
-            <div class="nav">
-                <h3>JS Projects</h3>
-                <div class="info">
-                    <h3><a href="">Dictionary app</a></h3>
-                    <h3><a href="">quiz app</a></h3>
-                    <h3><a href="">notes app</a></h3>
-                    <h3><a href="">tic tac toe</a></h3>
-                </div>
+        <div class="nav">
+            <h3>JS Projects</h3>
+            <div class="info">
+                <h3><a href="">Dictionary app</a></h3>
+                <h3><a href="">quiz app</a></h3>
+                <h3><a href="">notes app</a></h3>
+                <h3><a href="">tic tac toe</a></h3>
             </div>
-            
-            <div id="dic">
-    
+        </div>
+        <!-- dictonary app starts here -->
+        <audio id="sound"></audio>
+        <div class="container">
+            <div class="search-box">
+                <input
+                    type="text"
+                    placeholder="Type the word here.."
+                    id="inp-word"
+                />
+                <button id="search-btn">Search</button>
             </div>
-            <div id="quiz">
-                
-            </div>
-            <div id="notes">
-    
-            </div>
-            <div class="tic">
-    
-            </div>
-        </div>   
+            <div class="result" id="result"></div>
+        </div>
+        <!-- dictonary app ends here -->
+        <!-- Script -->
+        <script src="script.js"></script>
     </body>
 </html>
